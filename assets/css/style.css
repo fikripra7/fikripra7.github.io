@@ -1,0 +1,264 @@
+/* Google Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Courier+Prime:wght@400;700&family=Noto+Sans+Mono:wght@300;400;600&family=Source+Code+Pro:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700 !important;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: #1c1818;
+}
+
+.wrapper{
+  height: auto;
+  background: red;
+}
+
+/* header */
+.navbar{
+  height: auto;
+  z-index: 999;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.navbar-nav a{
+  margin-left: 2rem;
+  transition: 250ms;
+  text-transform: uppercase !important;
+  text-decoration: none;
+}
+
+.navbar-nav a:hover{
+  transition: 250ms;
+  color: #810101 !important;
+  /* color: #75707e; */
+  /* box-shadow: black 0 2px 0; */
+  display: inline-block;
+}
+
+.navbar-nav a:hover::after{
+  content: "";
+  display: block;
+  background: black;
+  height: 2px;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px){
+  .navcolps{
+    margin-top: 25px;
+  }
+
+  .navbar-nav a:hover{
+    display: inline-block;
+  }
+
+  .navbar-nav a:hover::after{
+    display: block;
+  }
+}
+
+/* section landing page */
+#home{
+  position: relative;
+}
+
+.home{
+  height: auto;
+  padding: 10rem 0 10rem 0;
+  background: #EEEBDD;
+}
+
+.home h3, .home h1{
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #640101;
+}
+
+.home h3{
+  font-size: 36px;
+}
+
+.home p{
+  font-weight: 400;
+}
+
+.mainbtn{
+  /* background: green; */
+  display: inline-block;
+  transition: 250ms;
+  border-radius: 5px;
+}
+
+.mainbtn .btn:hover{
+  background: purple;
+  display: inline-block;
+  transition: 250ms;
+  border-radius: 5px;
+}
+
+/* section myself */
+.myself{
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: 300;
+  height: auto;
+  background: #1c1818;
+  color: #EEEBDD;
+  padding-top: 7.5rem;
+  position: relative;
+}
+
+.about-me{
+  padding-bottom: 5rem;
+}
+
+.parallax{
+  padding: 5.5rem 0 5.5rem 0;
+  height: auto;
+  margin: auto;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background: url('../img/bgparallax.jpg');
+  opacity: 1;
+}
+
+.content-parallax{
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.content-parallax p{
+  opacity: 1;
+}
+
+/* section portfolio */
+.portfolio{
+  position: relative;
+}
+
+.btn-project{
+  background: #eeebdd !important;
+}
+
+.btn-certificate{
+  background: #eeebdd !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  position: relative;
+  bottom: -100px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.sertifikat{
+  padding: 250px 0 200px 0;
+}
+
+.sertifikat .carousel-inner .carousel-item img{
+  width: 750px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px){
+  .sertifikat{
+    height: auto;
+  }
+
+  .sertifikat .carousel-inner .carousel-item .card{
+    height: 500px;
+  }
+
+  .sertifikat .carousel-inner .carousel-item img{
+    width: 100%;
+    height: 180px;  
+  }
+}
+
+.carousel-caption{
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.ctn-project{
+  height: 470px;
+}
+
+@media only screen and (max-width: 600px){
+  .ctn-project{
+    height: 750px;
+  }
+  .ctn-project .name-project{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    text-align: center;
+  }
+  .ctn-project .desc-project{
+    padding-top: 0.5rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .ctn-project .box-img{
+    padding-right: 1rem !important;
+    padding-top: 0px !important;
+  }
+}
+
+/* Section Contact */
+.form-control::placeholder{
+  color: #1c1818 !important;
+}
+
+.formcustom {
+  background-color: #ebebeb;
+}
+
+.sosmed{
+  padding-left: 5rem;
+}
+
+.sosmed ul{
+  padding-left: 0px !important;
+}
+
+.sosmed ul li{
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.sosmed ul li a{
+  color: #f8f9fa;
+  text-decoration: none;
+  transition: 250ms;
+}
+
+.sosmed ul li a:hover{
+  transition: 250ms;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .sosmed h3 {
+    padding-top: 3rem !important;
+  }
+
+  .sosmed ul {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .sosmed{
+    padding-left: 11px !important;
+  }
+}
